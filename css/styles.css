@@ -212,13 +212,13 @@ a {
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .hero-section  {
+  .hero-section {
     background-image: linear-gradient(
-      0deg,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/hero-background@2x.jpg");
+        0deg,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero-background@2x.jpg");
   }
 }
 
@@ -1069,7 +1069,7 @@ a {
   left: 10px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 428px) {
   .container {
     justify-content: center;
     flex-direction: column;
@@ -1227,5 +1227,11 @@ a {
     display: inline-block;
     width: 100%;
     margin-top: 60px 0 40px 15px;
+  }
+}
+
+@media screen and (min-width: 429px) and (max-width: 768px) {
+  .footer {
+    display: none;
   }
 }
