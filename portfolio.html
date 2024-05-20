@@ -44,18 +44,45 @@
         <a href="tel:+1212-772-4150">+1 212-772-4150</a>
       </div>
     </div>
+    <div class="header__logo menu-logo">
+      <a href="#"><span class="logo">Web</span>Studio</a>
+    </div>
+    <button class="js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg class="icon-menu">
+        <use href="./icons/symbol-defs.svg#icon-burger-menu" />
+      </svg>
+      </div>
   </header>
+
+<!-- OPEN MENU BAR -->
+<div class="js-menu-container">
+  <button class="js-close-menu" type=" button">
+    x
+  </button>
+  <nav class="menu__navigation">
+    <ul>
+      <li><a href="index.html">Studio</a></li>
+      <li><a href="portfolio.html" class="active">Portofolio</a></li>
+      <li><a href="#Contacts">Contacts</a></li>
+    </ul>
+  </nav>
+
+  <div class="menu__info">
+    <a class="menu-phone" href="tel:+1212-772-4150">+1 212-772-4150</a>
+    <a class="menu-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+  </div>
+</div>
 
   <main>
     <!--HERO SECTION-->
     <section>
       <div class="hero-section__buttons">
         <div class="container">
-          <button type="button">All</button>
-          <button type="button">Web-sites</button>
-          <button type="button">Apps</button>
-          <button type="button">Design</button>
-          <button type="button">Marketing</button>
+          <button class="portofolio-buttons" type="button">All</button>
+          <button class="portofolio-buttons" type="button">Web-sites</button>
+          <button class="portofolio-buttons" type="button">Apps</button>
+          <button class="portofolio-buttons" ype="button">Design</button>
+          <button class="portofolio-buttons" type="button">Marketing</button>
         </div>
       </div>
 
@@ -260,11 +287,16 @@
         <h2 class="footer__title">SUNSCRIBE TO THE NEWSLETTER</h2>
         <form class="footer__subscribe-form" name="footer__subscribe-form">
           <input name="email" type="email" class="footer__subscribe-form-input" placeholder="E-mail" />
-          <button class="button" type="submit">Subscribe</button>
+          <button class="subscribe__button button" type="submit">Subscribe <svg class="icon-send">
+              <use href="icons/symbol-defs.svg#icon-send"></use>
+            </svg></button>
         </form>
-
       </div>
+    </div>
   </footer>
+
+  <script src="./js/mobile-menu.js"> </script>
+  </script>
 </body>
 
 </html>

@@ -44,7 +44,36 @@
         <a href="tel:+1212-772-4150">+1 212-772-4150</a>
       </div>
     </div>
+
+    <div class="header__logo menu-logo">
+      <a href="#"><span class="logo">Web</span>Studio</a>
+    </div>
+    <button class="js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg class="icon-menu">
+        <use href="./icons/symbol-defs.svg#icon-burger-menu" />
+      </svg>
+      </div>
   </header>
+
+  <!-- OPEN MENU BAR -->
+  <div class="js-menu-container">
+    <button class="js-close-menu" type=" button">
+      x
+    </button>
+    <nav class="menu__navigation">
+      <ul>
+        <li><a href="index.html">Studio</a></li>
+        <li><a href="portfolio.html" class="active">Portofolio</a></li>
+        <li><a href="#Contacts">Contacts</a></li>
+      </ul>
+    </nav>
+
+    <div class="menu__info">
+      <a class="menu-phone" href="tel:+1212-772-4150">+1 212-772-4150</a>
+      <a class="menu-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+    </div>
+  </div>
+
 
   <main>
     <section class="hero-section">
@@ -324,7 +353,7 @@
           <input name="email" type="email" class="footer__subscribe-form-input" placeholder="E-mail" />
           <button class="subscribe__button button" type="submit">Subscribe <svg class="icon-send">
               <use href="icons/symbol-defs.svg#icon-send"></use>
-            </svg></button></button>
+            </svg></button>
         </form>
       </div>
     </div>
@@ -375,7 +404,8 @@
       </form>
     </div>
   </div>
-  <script src="./modal.js">
+  <script src="./js/modal.js"> </script>
+  <script src="./js/mobile-menu.js"> </script>
   </script>
 </body>
 
