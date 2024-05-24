@@ -159,6 +159,11 @@ a {
   color: var(--blue);
 }
 
+.header__info {
+  display: flex;
+  flex-direction: row;
+}
+
 .header__info a {
   transition-property: all;
   transition-duration: 250ms;
@@ -169,12 +174,13 @@ a {
   line-height: 16px;
 }
 
-.header__info a:hover {
+.header__phone a:hover,
+.header__mail a:hover {
   color: var(--blue);
-  width: 42px;
 }
 
-.header__info a:focus {
+.header__phone:focus,
+.header__email:focus {
   color: var(--blue);
 }
 
@@ -260,7 +266,7 @@ a {
   letter-spacing: 0.06em;
   color: var(--white);
   border: 0px solid var(--blue);
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 
 .button:hover {
@@ -583,6 +589,7 @@ a {
   line-height: 16.41px;
   letter-spacing: 0.03em;
   text-align: left;
+  margin-bottom: 30px;
 }
 
 .footer__social {
@@ -626,6 +633,12 @@ a {
 
 .footer__subscribe {
   padding-left: 93px;
+}
+
+.footer__subscribe-form {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
 .subscribe__button {
@@ -1100,7 +1113,7 @@ a {
   }
 
   .hero-section {
-    height: 432px;
+    height: 400px;
   }
 
   .hero-section__title {
@@ -1230,8 +1243,67 @@ a {
   }
 }
 
-@media screen and (min-width: 429px) and (max-width: 768px) {
-  .footer {
+@media screen and (min-width: 768px) and (max-width: 1158px) {
+  .header__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__icon-mail {
+    margin-right: 5px;
+  }
+
+  .header__icon-phone {
+    margin-left: 0px;
+    margin-right: 5px;
+  }
+
+  .apps {
     display: none;
+  }
+
+  .hero-section {
+    height: 400px;
+  }
+
+  .hero-section__title {
+    margin-top: 118px;
+    margin-bottom: 40px;
+  }
+
+  .hero-section__request {
+    margin-top: 0px;
+    margin-bottom: 118px;
+  }
+
+  .about__info-container {
+    padding-top: 60px;
+  }
+
+  .about__info-container h5 {
+    text-align: left;
+  }
+
+  .footer .container {
+    justify-content: center;
+  }
+
+  .footer__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 165px;
+  }
+
+  .footer__title {
+    text-align: center;
+  }
+
+  .footer__subscribe {
+    margin-top: 60px;
+  }
+
+  .subscribe__button {
+    padding-top: 0px;
   }
 }
